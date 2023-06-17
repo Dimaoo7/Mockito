@@ -4,20 +4,12 @@ import pro.sky.mockito.model.EmployeeMap;
 
 import java.util.Collection;
 
-public class EmployeeService {
-    public EmployeeMap createEmployee(String firstName, String lastName, int salary, int department) {
-        return null;
-    }
+public interface EmployeeService {
+    EmployeeMap createEmployee(String firstName, String lastName, int salary, int department);
 
-    public EmployeeMap removeEmployee(String firstName, String lastName, int salary, int department) {
-        return null;
-    }
+    EmployeeMap removeEmployee(String firstname, String lastName,int salary,int department);
 
-    public EmployeeMap findEmployee(String firstName, String lastName, int salary, int department) {
-        return null;
-    }
+    EmployeeMap findEmployee(String firstname, String lastName,int salary,int department);
 
-    public Collection<EmployeeMap> showAllEmployees() {
-        return null;
-    }
+    Collection<EmployeeMap> showAllEmployees();
 }
